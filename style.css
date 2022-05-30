@@ -1,0 +1,372 @@
+
+body {
+  margin: 0;
+}
+
+
+main {
+  display: block;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+hr {
+  box-sizing: content-box;
+ 
+  height: 0;
+  
+  overflow: visible;
+ 
+}
+
+pre {
+  font-family: monospace, monospace;
+ 
+  font-size: 1em;
+ 
+}
+
+
+a {
+  background-color: transparent;
+}
+
+
+abbr[title] {
+  border-bottom: none;
+ 
+  text-decoration: underline;
+  
+  text-decoration: underline dotted;
+  
+}
+
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+
+  font-size: 1em;
+
+}
+
+
+small {
+  font-size: 80%;
+}
+
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+
+img {
+  border-style: none;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+ 
+  font-size: 100%;
+  
+  line-height: 1.15;
+  
+  margin: 0;
+
+}
+
+
+button,
+input {
+  
+  overflow: visible;
+}
+
+
+button,
+select {
+
+  text-transform: none;
+}
+
+
+details {
+  display: block;
+}
+
+
+summary {
+  display: list-item;
+}
+
+
+template {
+  display: none;
+}
+
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+body.fijar-boby {
+  overflow: hidden;
+}
+
+p {
+  font-size: 2rem;
+  color: #000;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.bk-verde {
+  background-color: #4CB8B3;
+}
+
+.bk-amarillo {
+  background-color: #fef46d;
+}
+
+.header {
+  background-color: #4CB8B3;
+}
+.header .contenido-header {
+  padding: 2.5rem 0;
+}
+
+.header h1 {
+  color: #FFF;
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.navegacion-principal {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.navegacion-principal a {
+  color: #FFF;
+  font-size: 2rem;
+}
+.navegacion-principal a:hover {
+  color: #fef46d;
+}
+
+.video {
+  position: relative;
+  max-height: 50rem;
+  overflow: hidden;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+}
+
+.contenido-video {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.contenido-video h2 {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 7rem;
+  align-items: flex-start;
+}
+.contenido-video h2 span {
+  background-color: #f53756;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenido-festival h2 {
+  font-size: 3rem;
+}
+.contenido-festival .fecha {
+  color: #f53756;
+  font-weight: 700;
+}
+.contenido-festival .texto {
+  line-height: 1.5;
+}
+
+.lineup {
+  background-color: #f53756;
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor .escenario {
+  padding-top: 5rem/2;
+}
+.escenarios-contenedor .nombre-escenario {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.escenarios-contenedor .nombre-escenario:after {
+  content: "";
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bk-verde .calendario li:nth-child(odd) {
+  background-color: #3b9691;
+}
+
+.bk-amarillo .calendario li:nth-child(odd) {
+  background-color: #fef03a;
+}
+
+.galeria {
+  padding: 5rem 0;
+}
+.galeria h3 {
+  text-align: center;
+}
+
+.galeria-imagenes {
+  padding: 0;
+  list-style: none;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 40px;
+}
